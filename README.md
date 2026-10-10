@@ -12,7 +12,28 @@ Needs Rust 1.80+ (https://rustup.rs).
 cargo run --release
 ```
 
-Linux may need: `sudo apt install libxkbcommon-dev libgl1-mesa-dev libwayland-dev` (or your distro's equivalents).
+### Arch Linux / CachyOS
+
+```
+# toolchain and the libraries eframe (egui) loads at runtime
+sudo pacman -S --needed rust base-devel git libxkbcommon libx11 libxcursor libxi libxrandr wayland mesa vulkan-icd-loader
+
+git clone https://github.com/<you>/traveller_npc.git
+cd traveller_npc
+cargo run --release
+```
+
+- Use `rustup` instead of the `rust` package if you prefer it (`sudo pacman -S rustup && rustup default stable`).
+- On CachyOS, install your GPU's Vulkan driver if it isn't already there (`vulkan-radeon`, `nvidia-utils` or `vulkan-intel`).
+- The binary ends up at `target/release/traveller_npc`; copy it anywhere and run it from the folder where you want exported files to go.
+- **Wayland:** winit 0.30 can't receive file drag-and-drop on native Wayland, so the app starts under XWayland
+  (it unsets `WAYLAND_DISPLAY` when `DISPLAY` is set). Run `TRAVELLER_NPC_WAYLAND=1 cargo run --release`
+  to force native Wayland, where drag-and-drop won't work (type the portrait path instead).
+- **Fish shell:** set the variable with `env TRAVELLER_NPC_WAYLAND=1 cargo run --release`.
+
+### Other Linux distros
+
+Debian/Ubuntu may need: `sudo apt install libxkbcommon-dev libgl1-mesa-dev libwayland-dev` (or your distro's equivalents).
 
 Run the generator tests: `cargo test`
 
