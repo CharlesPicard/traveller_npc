@@ -18,7 +18,7 @@ cargo run --release
 # toolchain and the libraries eframe (egui) loads at runtime
 sudo pacman -S --needed rust base-devel git libxkbcommon libx11 libxcursor libxi libxrandr wayland mesa vulkan-icd-loader
 
-git clone https://github.com/<you>/traveller_npc.git
+git clone https://github.com/CharlesPicard/traveller_npc.git
 cd traveller_npc
 cargo run --release
 ```
