@@ -1,0 +1,18 @@
+[package]
+name = "traveller_npc"
+version = "0.2.0"
+edition = "2021"
+description = "Traveller NPC generator with a character-card interface"
+
+[features]
+default = ["gui"]
+gui = ["dep:eframe", "dep:serde", "dep:serde_json", "dep:image"]
+
+[dependencies]
+eframe = { version = "0.31", optional = true }
+serde = { version = "1", features = ["derive"], optional = true }
+serde_json = { version = "1", optional = true }
+image = { version = "0.25", default-features = false, features = ["png", "jpeg", "webp"], optional = true }
+
+[profile.release]
+opt-level = 3

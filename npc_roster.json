@@ -1,0 +1,136 @@
+{
+  "options": {
+    "name": "",
+    "species": 4,
+    "career": 8,
+    "terms": 7,
+    "method": "Heroic",
+    "aging": true,
+    "end_on_mishap": true,
+    "seed": 393034669,
+    "lock_seed": false,
+    "portrait_path": "/home/charles/Documents/Traveler RPG/Hfyo'u Tyakhtaoi.jpg"
+  },
+  "npcs": [
+    {
+      "name": "Hfyo'u Tyakhtaoi",
+      "species": "Aslan",
+      "career": "Scholar",
+      "rank": 2,
+      "rank_title": "Scientist",
+      "age": 46,
+      "terms": 7,
+      "stats": [
+        11,
+        10,
+        7,
+        7,
+        10,
+        10
+      ],
+      "skills": {
+        "Comms": 1,
+        "Computer": 2,
+        "Electronics": 4,
+        "Language": 1,
+        "Medic": 2,
+        "Persuade": 1,
+        "Science": 3
+      },
+      "log": [
+        {
+          "term": 1,
+          "age_start": 18,
+          "age_end": 22,
+          "events": [
+            "Basic training: all service skills at 0",
+            "Survived (EDU 8 vs 5+)",
+            "Commission failed (INT 6 vs 8+)",
+            "Gained: Medic 1, Language 1"
+          ]
+        },
+        {
+          "term": 2,
+          "age_start": 22,
+          "age_end": 26,
+          "events": [
+            "Survived (EDU 9 vs 5+)",
+            "Commission failed (INT 3 vs 8+)",
+            "Gained: Comms 1, Electronics 1"
+          ]
+        },
+        {
+          "term": 3,
+          "age_start": 26,
+          "age_end": 30,
+          "events": [
+            "Survived (EDU 8 vs 5+)",
+            "Commissioned (INT 8 vs 8+): Researcher",
+            "Gained: Science 1, Electronics 2"
+          ]
+        },
+        {
+          "term": 4,
+          "age_start": 30,
+          "age_end": 34,
+          "events": [
+            "Survived (EDU 7 vs 5+)",
+            "Promotion failed (INT 3 vs 8+)",
+            "Gained: Computer 1, Science 2",
+            "Aging check passed (5)"
+          ]
+        },
+        {
+          "term": 5,
+          "age_start": 34,
+          "age_end": 38,
+          "events": [
+            "Survived (EDU 5 vs 5+)",
+            "Promoted (INT 9 vs 8+): Scientist",
+            "Gained: Persuade 1, Medic 2",
+            "Aging check failed (0): STR -1"
+          ]
+        },
+        {
+          "term": 6,
+          "age_start": 38,
+          "age_end": 42,
+          "events": [
+            "Survived (EDU 6 vs 5+)",
+            "Promotion failed (INT 3 vs 8+)",
+            "Gained: Electronics 3, Electronics 4",
+            "Aging check passed (4)"
+          ]
+        },
+        {
+          "term": 7,
+          "age_start": 42,
+          "age_end": 46,
+          "events": [
+            "Survived (EDU 7 vs 5+)",
+            "Promotion failed (INT 4 vs 8+)",
+            "Gained: Computer 2, Science 3",
+            "Aging check passed (3)"
+          ]
+        }
+      ],
+      "credits": 17000,
+      "trait_": "Reckless",
+      "wants": "Recover a lost artefact",
+      "hook": "Was framed for a crime they didn't commit",
+      "quote": "Every port has a back door. I just know where to knock.",
+      "seed": 393034669,
+      "portrait_path": "/home/charles/Documents/Traveler RPG/Hfyo'u Tyakhtaoi.jpg",
+      "look": {
+        "body": "tall leonine Aslan humanoid, athletic and lean-muscled, grizzled and visibly ageing, digitigrade stance, retractable claws, dewclaws on the wrists",
+        "skin": "short sandy grey fur with darker markings along the spine and forearms, impeccably groomed",
+        "hair": "a thick mane worn tied in a warrior's knot",
+        "eyes": "pale yellow slit-pupilled eyes under a heavy brow",
+        "mark": "old claw scars across the muzzle",
+        "attire": "a long academic coat, ink-stained cuffs, and a pair of data-lenses pushed up on the forehead",
+        "expression": "wry expression, with a reckless air about them",
+        "setting": "a quiet library alcove lit by a warm lamp"
+      }
+    }
+  ]
+}
